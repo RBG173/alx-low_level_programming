@@ -1,28 +1,29 @@
 #include <stdio.h>
 
-int main() {
-    // Print all possible different combinations of two digits
-    for (int i = 0; i <= 8; i++) {
-        for (int j = i + 1; j <= 9; j++) {
-            // Convert the digits to ASCII values
-            int digit1 = i + '0';
-            int digit2 = j + '0';
-            
-            // Check if the combination is equivalent to 01 or 10
-            if ((digit1 == '0' && digit2 == '1') || (digit1 == '1' && digit2 == '0'))
-                continue;
-            
-            // Print the combination in ascending order
-            putchar(digit1);
-            putchar(digit2);
-            
-            // Print ", " unless it's the last combination
-            if (i != 8) {
-                putchar(',');
-                putchar(' ');
-            }
-        }
-    }
-    
-    return 0;
+/**
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
+ */
+int main(void)
+{
+	int n, m;
+
+	for (n = 48; n <= 56; n++)
+	{
+		for (m = 49; m <= 57; m++)
+		{
+			if (m > n)
+			{
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
