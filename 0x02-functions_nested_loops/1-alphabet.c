@@ -3,7 +3,7 @@
 /**
  * print_alphabet - Prints all alphabets in lowercase
  *
- * Description: This function prints all the lowercase alphabets from 'a' to 'z'
+ * Description: This function prints all lowercase alphabets from 'a' to 'z'
  *              using the _putchar function.
  */
 void print_alphabet(void)
