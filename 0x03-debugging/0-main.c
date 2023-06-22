@@ -1,16 +1,16 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - Test function for positive or negative
- * Return: 0
+ * main - Tests the positive_or_negative function with case 0
+ *
+ * Return: Always 0
  */
-
 int main(void)
 {
- int i;
+	int i = 0;
 
- i = 0;
- positive_or_negative(i);
+	positive_or_negative(i);
 
-return (0);
+	return (0);
 }
